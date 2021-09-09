@@ -19,10 +19,28 @@ const squadre = [
     }
 ];
 
+
 for( let i = 0; i<squadre.length; i++){
-    random(0,30)=squadre[i]["puntiFatti"] ;
+    let squadra = squadre[i]; 
+    squadra["puntiFatti"] = random(0,30);
+    squadra["falliSubiti"] = random(0,30);
+    console.log(squadre[i]["puntiFatti"], squadre[i]["falliSubiti"]);
 }
-console.log(squadre[i]["puntiFatti"], squadre[i]["falliSubiti"]);
+
+console.log(squadre);
+let punteggi =[];
+for( let i = 0; i<squadre.length; i++){
+    let squadra = squadre[i];
+    punteggi.push(`${squadra["nome"]} ha subito ${squadra["falliSubiti"]} falli`)
+    // punteggi.push(squadra["falliSubiti"])
+}
+console.log(punteggi);
+
+
+
+// console.log(squadre[i]["puntiFatti"], squadre[i]["falliSubiti"]);
+
+
 // Generare numeri random al posto degli 0 nelle proprietà:
 
 // Punti fatti e falli subiti.
