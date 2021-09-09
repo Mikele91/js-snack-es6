@@ -18,7 +18,7 @@ const listaBici=[
     },
 ];
 
-let pesoBici=listaBici[0];
+let pesoBici=listaBici[0].peso;
 for( let i = 0; i<listaBici.length; i++){
     if(pesoBici>listaBici[i].peso ){
 
