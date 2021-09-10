@@ -23,14 +23,23 @@ function myfunction(list, a, b){
         
         max = prompt("inserisci un nuovo numero valido");
     } 
+    let newList =[];
+    list.forEach( (element, i)  => {
+        if(i >= min && i< max){
+            newList.push(element);
+        }   
+    });
+        
+    
 
-    let newList= lista.filter(
-        (elem, i)=> {
-            if(i>=min && i <=max){
-                return true
-            }
-        }
-        )
+
+    // let newList= lista.filter(
+    //     (elem, i)=> {
+    //         if(i>=min && i <=max){
+    //             return true
+    //         }
+    //     }
+    //     )
         console.log(newList);
 
     // newList =(lista.filter((elem, i) => i >= min&& i < max));
