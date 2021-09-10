@@ -25,8 +25,8 @@ function myfunction(list, a, b){
     } 
 
     let newList= lista.filter(
-        (elem, i)=> {
-            if(i>=min && i <max){
+        (elem)=> {
+            if(elem>min && elem <max){
                 return true
             }
         }
@@ -44,7 +44,7 @@ function myfunction(list, a, b){
 //     console.log(newList);
 //     return newList;
 }
-console.log(myfunction(lista, 1, 3));
+myfunction(lista, 1, 7);
 
 
 
