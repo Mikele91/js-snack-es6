@@ -20,7 +20,7 @@ function myfunction(list, a, b){
     
     
     while(max > list.length -1) {
-        console.log("hai inserito un numero troppo grande");
+        
         max = prompt("inserisci un nuovo numero valido");
     } 
 
