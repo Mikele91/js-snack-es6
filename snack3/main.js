@@ -42,7 +42,7 @@ function myfunction(list, a, b){
     //     )
         console.log(newList);
 
-    // newList =(lista.filter((elem, i) => i >= min&& i < max));
+    // newList =(list.filter((elem, i) => i >= min&& i < max));
 
 
 //     // for(var i = min; i < max ; i++){
