@@ -23,6 +23,11 @@ function myfunction(list, a, b){
         
         max = prompt("inserisci un nuovo numero valido");
     } 
+    // let newList =list.map( (element, i)  => {
+    //     if(i >= min && i< max){
+    //         return(element);
+    //     }   
+    // });
     let newList =[];
     list.forEach( (element, i)  => {
         if(i >= min && i< max){
@@ -53,7 +58,7 @@ function myfunction(list, a, b){
 //     console.log(newList);
 //     return newList;
 }
-myfunction(lista, 1, 6);
+myfunction(lista, 1, 5);
 
 
 
