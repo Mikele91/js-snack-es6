@@ -19,14 +19,14 @@ function myfunction(list, a, b){
     
     
     
-    while(max > list.length ) {
+    while(max > list.length-1 ) {
         
         max = prompt("inserisci un nuovo numero valido");
     } 
 
     let newList= lista.filter(
-        (elem)=> {
-            if(elem>min && elem <max){
+        (elem, i)=> {
+            if(i>=min && i <=max){
                 return true
             }
         }
@@ -44,7 +44,7 @@ function myfunction(list, a, b){
 //     console.log(newList);
 //     return newList;
 }
-myfunction(lista, 1, 8);
+myfunction(lista, 1, 6);
 
 
 
