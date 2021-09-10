@@ -31,7 +31,8 @@ console.log(squadre);
 let punteggi =[];
 for( let i = 0; i<squadre.length; i++){
     let squadra = squadre[i];
-    punteggi.push(`${squadra["nome"]} ha subito ${squadra["falliSubiti"]} falli`)
+    const{nome, falliSubiti} = squadra
+    punteggi.push(`${nome} ha subito ${falliSubiti} falli`)
     // punteggi.push(squadra["falliSubiti"])
 }
 console.log(punteggi);
