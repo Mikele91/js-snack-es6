@@ -24,16 +24,19 @@ for( let i = 0; i<squadre.length; i++){
     let squadra = squadre[i]; 
     squadra["puntiFatti"] = random(0,30);
     squadra["falliSubiti"] = random(0,30);
-    console.log(squadre[i]["puntiFatti"], squadre[i]["falliSubiti"]);
-}
+}        
 
 console.log(squadre);
 let punteggi =[];
 for( let i = 0; i<squadre.length; i++){
     let squadra = squadre[i];
-    const{nome, falliSubiti} = squadra
-    punteggi.push(`${nome} ha subito ${falliSubiti} falli`)
+    const{nome, falliSubiti} = squadra;
+    punteggi.push({ // pushare direttamente nom e falli subiti come oggetto nell'arrey punteggi!
+        nome,
+        falliSubiti
+    })
     // punteggi.push(squadra["falliSubiti"])
+    console.log(`${nome} ha subito ${falliSubiti} falli`);
 }
 console.log(punteggi);
 
