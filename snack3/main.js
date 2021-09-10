@@ -19,7 +19,7 @@ function myfunction(list, a, b){
     
     
     
-    while(max > list.length -1) {
+    while(max > list.length ) {
         
         max = prompt("inserisci un nuovo numero valido");
     } 
@@ -44,7 +44,7 @@ function myfunction(list, a, b){
 //     console.log(newList);
 //     return newList;
 }
-myfunction(lista, 1, 7);
+myfunction(lista, 1, 8);
 
 
 
