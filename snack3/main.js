@@ -3,7 +3,7 @@
 // Usiamo i nuovi metodi degli array foreach o filter.
 
 
-const lista= [1, 2, 3, 4, 5, 6, 7];
+const lista= [12, 23, 34, 45, 56, 67, 78];
 function myfunction(list, a, b){
     
     
@@ -28,37 +28,34 @@ function myfunction(list, a, b){
     //         return(element);
     //     }   
     // });
-    let newList =[];
-    list.forEach( (element, i)  => {
-        if(i >= min && i< max){
-            newList.push(element);
-        }   
-    });
-        
+    // let newList =[];
+    // list.forEach( 
+    //     (element, i)  => {
+    //     if(i >= min && i<= max){
+    //         newList.push(element);
+    //     }   
+    // }
+    // );
+    // return newList;
+    // let newList=  invece di salvarla e restituirla restituiamo già il tutto!
     
-
-
-    // let newList= lista.filter(
-    //     (elem, i)=> {
-    //         if(i>=min && i <=max){
-    //             return true
-    //         }
-    //     }
-    //     )
-        console.log(newList);
-
+    return lista.filter( (elem, i)=>  i>=min && i <=max); //essendo unica riga levendo  graffe e return con arrow function si può scrivere così!
+        // {
+            // if(i>=min && i <=max){ questa condizione restituisce sempre ture o folse e quindi non c'è bisongo di scriverlo noi !
+            //     return true
+            // }
+        // }
+    
+    // return newList;
     // newList =(list.filter((elem, i) => i >= min&& i < max));
-
-
 //     // for(var i = min; i < max ; i++){
 //     //     newList.push(list[i]);
         
 //     // }
-
 //     console.log(newList);
 //     return newList;
 }
-myfunction(lista, 1, 5);
 
 
+console.log(myfunction(lista, 1, 5));
 
